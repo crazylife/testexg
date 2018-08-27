@@ -16,6 +16,8 @@ const (
 
 func main() {
 
+	okef.GetOrderHistory(apiKey, secretKey)
+
 	//初始化数据库
 	err := sqlCreate()
 	if err != nil {
