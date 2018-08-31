@@ -31,7 +31,6 @@ func GetHistoryTradeData(time string, count int, symbol string, start int) (*[]T
 		fmt.Println(errMsg)
 		return nil, errors.New(errMsg)
 	}
-	fmt.Println(string(b))
 
 	data := make([]TradeData, 0)
 
